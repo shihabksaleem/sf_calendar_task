@@ -15,9 +15,9 @@ A high-fidelity, premium Flutter calendar application built with a modern "Paste
 ## 📸 Screenshots
 
 <p align="center">
-  <img src="file:///Users/shihab/.gemini/antigravity/brain/252b08e6-5ff1-4db0-b1b3-cb19269d83a8/media__1775907952308.png" width="30%" alt="Main Calendar View" />
-  <img src="file:///Users/shihab/.gemini/antigravity/brain/252b08e6-5ff1-4db0-b1b3-cb19269d83a8/media__1775907952271.png" width="30%" alt="Date Picker Dialog" />
-  <img src="file:///Users/shihab/.gemini/antigravity/brain/252b08e6-5ff1-4db0-b1b3-cb19269d83a8/media__1775907952301.png" width="30%" alt="Empty State" />
+  <img src="./screenshots/media__1775907952308.png" width="30%" alt="Main Calendar View" />
+  <img src="./screenshots/media__1775907952271.png" width="30%" alt="Date Picker Dialog" />
+  <img src="./screenshots/media__1775907952301.png" width="30%" alt="Empty State" />
 </p>
 
 ## 📂 Project Structure
