@@ -22,7 +22,9 @@ class MyApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         Provider.value(value: calendarRepository),
-        ChangeNotifierProvider(create: (context) => CalendarProvider(calendarRepository)),
+        ChangeNotifierProvider(
+          create: (context) => CalendarProvider(calendarRepository),
+        ),
       ],
       child: MaterialApp(
         title: 'SF Calendar Task',
@@ -31,7 +33,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           useMaterial3: true,
           colorScheme: ColorScheme.fromSeed(
-            seedColor: const Color(0xFFFED5CF), // Pastel Pink as base
+            seedColor: const Color(0xFFFED5CF),
             brightness: Brightness.light,
             surface: Colors.white,
           ),
@@ -40,7 +42,11 @@ class MyApp extends StatelessWidget {
             centerTitle: true,
             elevation: 0,
             backgroundColor: Colors.white,
-            titleTextStyle: GoogleFonts.outfit(color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),
+            titleTextStyle: GoogleFonts.outfit(
+              color: Colors.black,
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ),
         darkTheme: ThemeData(
@@ -48,7 +54,7 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(
             seedColor: const Color(0xFFFED5CF),
             brightness: Brightness.dark,
-            surface: const Color(0xFF101012), // Deep midnight surface
+            surface: const Color(0xFF101012),
             onSurface: Colors.white,
             primary: const Color(0xFFFED5CF),
           ),
@@ -58,7 +64,11 @@ class MyApp extends StatelessWidget {
             centerTitle: true,
             elevation: 0,
             backgroundColor: const Color(0xFF101012),
-            titleTextStyle: GoogleFonts.outfit(color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
+            titleTextStyle: GoogleFonts.outfit(
+              color: Colors.white,
+              fontSize: 20,
+              fontWeight: FontWeight.bold,
+            ),
           ),
         ),
         home: const CalendarPage(),
